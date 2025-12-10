@@ -1,0 +1,37 @@
+.page {
+  padding: 30px;
+  background: var(--navy);
+  min-height: 100vh;
+}
+
+.page h2 {
+  color: var(--yellow);
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.card-box {
+  background: var(--indigo);
+  padding: 20px;
+  border-radius: var(--radius);
+  color: var(--navy);
+  margin-bottom: 25px;
+  box-shadow: var(--shadow);
+}
+
+input,
+textarea,
+select {
+  width: -webkit-fill-available;
+  padding: 12px;
+  border-radius: var(--radius);
+  border: none;
+  margin: 10px 0;
+  background: #c9d2ff;
+  color: var(--navy);
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+}

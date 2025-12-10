@@ -1,0 +1,31 @@
+.rfp-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--indigo);
+  color: var(--navy);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.rfp-table th {
+  background: var(--orange);
+  padding: 12px;
+  color: white;
+  text-align: left;
+}
+
+.rfp-table td {
+  padding: 12px;
+  background: #dbe0ff;
+  border-bottom: 1px solid #b5befa;
+}
+
+.table-link {
+  color: var(--orange);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.table-link:hover {
+  text-decoration: underline;
+}

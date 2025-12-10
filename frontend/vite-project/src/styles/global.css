@@ -1,0 +1,33 @@
+:root {
+  --navy: #1a2238;
+  --indigo: #9daaf2;
+  --orange: #ff6a3d;
+  --yellow: #f4db7d;
+  --white: #ffffff;
+  --text-light: #e0e6ff;
+
+  --radius: 12px;
+  --shadow: 0px 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+body {
+  background: var(--navy);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+.rfp-container {
+  padding: 40px;
+  background: var(--navy);
+  color: white;
+  min-height: 100vh;
+}
+
+.rfp-block {
+  background: var(--indigo);
+  color: var(--navy);
+  padding: 20px;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}

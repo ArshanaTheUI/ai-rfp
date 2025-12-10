@@ -1,0 +1,57 @@
+.wizard-container {
+  min-height: 100vh;
+  background: var(--navy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.wizard-card {
+  background: var(--indigo);
+  color: var(--navy);
+  width: 500px;
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.4s ease;
+}
+
+/* TITLE */
+.wizard-title {
+  color: var(--yellow);
+  margin-bottom: 5px;
+}
+
+/* DESCRIPTION */
+.wizard-desc {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #2a2f45;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 25px;
+}
+
+.progress-segment {
+  height: 8px;
+  flex: 1;
+  background: #bcc6ff;
+  border-radius: 6px;
+  transition: 0.4s;
+}
+
+.progress-segment.active {
+  background: var(--orange);
+}
+
+/* NAV BUTTONS */
+.wizard-nav {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}

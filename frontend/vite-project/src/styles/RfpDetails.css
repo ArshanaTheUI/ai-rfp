@@ -1,0 +1,41 @@
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--indigo);
+  color: var(--navy);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.details-table th {
+  background: var(--orange);
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.details-table td {
+  padding: 12px;
+  border-bottom: 1px solid #b5befa;
+  background: #dbe0ff;
+}
+
+.json-block {
+  background: #eef0ff;
+  padding: 12px;
+  border-radius: 8px;
+  color: var(--navy);
+  max-height: 300px;
+  overflow: auto;
+}
+
+.small-json {
+  max-height: 150px;
+}
+
+.loading,
+.no-data {
+  padding: 40px;
+  text-align: center;
+  color: var(--yellow);
+}
