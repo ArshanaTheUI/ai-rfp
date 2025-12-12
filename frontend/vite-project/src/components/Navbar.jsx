@@ -1,18 +1,4 @@
-// import { Link } from "react-router-dom";
 
-// export default function Navbar() {
-//     return (
-//         <nav style={{ padding: "15px", background: "#222", color: "#fff" }}>
-//             <Link to="/" style={{ marginRight: "20px", color: "#fff" }}>Dashboard</Link>
-//             <Link to="/create-rfp" style={{ marginRight: "20px", color: "#fff" }}>Create RFP</Link>
-//             <Link to="/vendors" style={{ marginRight: "20px", color: "#fff" }}>Vendors</Link>
-//             <Link to="/send-rfp" style={{ marginRight: "20px", color: "#fff" }}>Send RFP</Link>
-//             <Link to="/rfps" style={{ marginRight: "20px", color: "#fff" }}>RFP List</Link>
-//             <Link to="/wizard" style={{ marginRight: "20px" }}>Get Started</Link>
-
-//         </nav>
-//     );
-// }
 import { Link, useLocation } from "react-router-dom";
 import "../styles/navbar.css";
 

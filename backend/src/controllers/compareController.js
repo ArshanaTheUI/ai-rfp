@@ -8,7 +8,6 @@ exports.compareRfp = async (req, res) => {
     const rfp = await Rfp.findById(rfpId).lean();
     if (!rfp) return res.status(404).json({ error: "RFP not found" });
 
-    // IMPORTANT: POPULATE VENDOR HERE
     const proposals = await Proposal.find({ rfp: rfpId })
       .populate("vendor")
       .lean();

@@ -51,9 +51,7 @@ ${text}
 };
 
 /**
- * ------------------------------------------------------------------
- * 2) PARSE VENDOR EMAIL → STRUCTURED PROPOSAL JSON
- * ------------------------------------------------------------------
+ *  PARSE VENDOR EMAIL → STRUCTURED PROPOSAL JSON
  */
 exports.parseProposalFromEmail = async (emailText) => {
   const prompt = `

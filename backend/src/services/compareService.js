@@ -86,7 +86,6 @@ async function computeScores(proposals) {
   const minWarranty = warranties.length ? Math.min(...warranties) : 0;
   const maxWarranty = warranties.length ? Math.max(...warranties) : minWarranty;
 
-  // weights (you can tune)
   const weights = {
     price: 0.5,
     delivery: 0.2,
@@ -94,7 +93,6 @@ async function computeScores(proposals) {
     completeness: 0.2,
   };
 
-  // compute per-proposal score and breakdown
   const results = proposals.map((p) => {
     const t = totals.find((x) => String(x.id) === String(p._id));
     const priceScore =
@@ -119,7 +117,7 @@ async function computeScores(proposals) {
 
     return {
       ...p,
-      _score: Math.round(final * 100), // 0..100
+      _score: Math.round(final * 100),
       _breakdown: {
         priceScore: Math.round(priceScore * 100),
         deliveryScore: Math.round(deliveryScore * 100),
@@ -133,7 +131,7 @@ async function computeScores(proposals) {
 }
 
 /**
- * askLLMRecommendation(rfp, proposalsWithScores)
+ * ask LLMRecommendation(rfp, proposalsWithScores)
  * - uses the LLM to produce a short recommendation and bullet risks
  */
 async function askLLMRecommendation(rfp, proposals) {

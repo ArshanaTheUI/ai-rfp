@@ -1,11 +1,10 @@
-// frontend/src/pages/ProposalComparison.jsx
 import { useEffect, useState } from "react";
 import { API } from "../api";
 import { useParams, Link, useNavigate } from "react-router-dom";
 
-import "../styles/pageCard.css";   // CORRECT FILE
-import "../styles/button.css";         // CORRECT FILE
-import "../styles/ProposalComparison.css"; // CORRECT FILE
+import "../styles/pageCard.css";
+import "../styles/button.css";
+import "../styles/ProposalComparison.css";
 
 function formatNumber(v) {
     if (v == null) return "-";

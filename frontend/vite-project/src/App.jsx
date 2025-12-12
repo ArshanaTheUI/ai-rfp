@@ -5,7 +5,7 @@ import CreateRfp from "./pages/CreateRfp";
 import Vendors from "./pages/Vendors";
 import SendRfp from "./pages/SendRfp";
 import RfpList from "./pages/RfpList";
-import RfpDetails from "./pages/RfpDetails"; // we will create this next
+import RfpDetails from "./pages/RfpDetails";
 import ProposalComparison from "./pages/ProposalComparison";
 import Wizard from "./pages/Wizard";
 import WizardSuccess from "./pages/WizardSuccess";

@@ -1,8 +1,6 @@
-// frontend/src/pages/CreateRfp.jsx
 import { useState } from "react";
 import { API } from "../api";
 import { useNavigate } from "react-router-dom";
-
 import "../styles/pageCard.css";
 import "../styles/button.css";
 

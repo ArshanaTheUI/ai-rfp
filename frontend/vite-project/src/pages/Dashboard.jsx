@@ -24,11 +24,9 @@ export default function Dashboard() {
     useEffect(() => {
         loadStats();
     }, []);
-    // e.g. in App.jsx useEffect
     useEffect(() => {
         const done = localStorage.getItem("rfp_wizard_done");
         if (!done) {
-            // only redirect from root or show modal; here auto-navigate to the wizard
             navigate("/wizard");
         }
     }, []);
